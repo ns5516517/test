@@ -1,18 +1,15 @@
-import { Covered_By_Your_Grace, Geist, Geist_Mono, Inter } from "next/font/google";
+import { Covered_By_Your_Grace, Inter } from "next/font/google";
 import Header from "./components/header";
 import '../../public/sass/helper/reset.scss';
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+
 const inter = Inter({
   variable: "--font-inter",
-  weight: [ "100" , "200" , "300" , "400" , "500" , "600" , "700" , "800" , "900"],
-  subsets: ['latin' ]
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ['latin']
 })
 const grace = Covered_By_Your_Grace({
   variable: "--font-grace",
@@ -20,10 +17,7 @@ const grace = Covered_By_Your_Grace({
   sunsets: ['latin']
 })
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
 
 export const metadata = {
   title: "Create Next App",
