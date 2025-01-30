@@ -14,7 +14,7 @@ const inter = Inter({
 const grace = Covered_By_Your_Grace({
   variable: "--font-grace",
   weight: ["400"],
-  sunsets: ['latin']
+  sunsets: ['latin-ext']
 })
 
 
