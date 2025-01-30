@@ -1,0 +1,18 @@
+@use "../base/variable.scss" as variable;
+
+.accord_section{
+    padding: 90px 0 ;
+    background-color: variable.$op_blue;
+    .accord_inner{
+        .heading{
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 76px;
+            text-align: center;
+            color: variable.$black;
+        }
+        .sub_heading{
+            color: variable.$blue;
+        }
+    }
+}

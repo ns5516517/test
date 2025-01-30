@@ -1,0 +1,30 @@
+@use '../base/variable.scss' as variable;
+
+.dtc_brands_section{
+    padding: 90px 0 60px;
+  .dtc_brands_inner{
+    .heading{
+        width: 680px;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 100%;
+        font-family: Inter;
+        font-size: 63px;
+        font-weight: 700;
+        line-height: 76px;
+        color: variable.$black;
+        margin-bottom: 50px;
+        .other{
+            display: inline-block;
+            color: variable.$blue;
+            font-family: variable.$grace;
+            font-weight: 400;
+        }
+    }
+    .img_wrapper{
+        // margin: 0 20px;
+        padding-right: 20px;
+
+    }
+  }  
+}

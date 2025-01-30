@@ -1,0 +1,90 @@
+@use "../base/variable.scss" as variable;
+
+.hero_section{
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    background-color: variable.$op_blue;
+    .hero_section_inner{
+        .heading{
+            font-family: Inter;
+            font-size: 82px;
+            font-weight: 700;
+            line-height: 96px;
+            color: variable.$black;
+            margin-bottom: 25px;
+            .other{
+                display: inline-block;
+                font-weight: 400;
+                color: variable.$blue;
+                font-family: variable.$grace;
+            }
+        }
+        .para{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 34px;
+            color: variable.$gray;
+            width: 555px;
+            max-width: 100%;
+            margin-bottom: 48px;
+
+        }
+        .rating_area{
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            .try_btn{
+                align-content: center;  
+                border: 2px solid #2E2F35;
+                box-shadow: 3px 3px 0px 0px #2E2F35;
+                border-radius: 15px;
+                padding:22px 65px;
+                display: inline-block;
+                background-color: variable.$orange;
+                .try_link{
+                    font-family: Inter;
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: 20px;
+                    text-decoration: none;
+                    letter-spacing: 1px;
+                    color: variable.$white;
+                }
+            }
+            .rating_icons_outer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .rating_icons{
+                    text-align: center;
+                    .star_icon{
+                        display: inline-block;
+                        width: 24px;
+                        height: 24px;
+                        color: variable.$gold;
+                    }
+                }
+                p{
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    color: variable.$black;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+
+    }
+    .hero_img{
+        position: absolute;
+        right: -100px;
+        top: 55px;
+        width: 610px;
+        height: 610px;
+
+    }
+}
+

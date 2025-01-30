@@ -1,0 +1,75 @@
+@use "../base/variable.scss" as  variable;
+
+.cards_section{
+    padding: 30px 0 90px;
+    .cards_inner{
+        .heading{
+            // width: 680px;
+            text-align: center;
+            margin: 0 auto;
+            // max-width: 100%;
+            font-family: Inter;
+            font-size: 63px;
+            font-weight: 700;
+            line-height: 76px;
+            color: variable.$black;
+            margin-bottom: 50px;
+            .other{
+                display: inline-block;
+                color: variable.$blue;
+                font-family: variable.$grace;
+                font-weight: 400;
+            }
+        }
+        .card_wrapper{
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            .product_card{
+                display: flex;
+                gap: 48px;
+                max-height: 550px;
+                flex-direction: column;
+                width: calc((100% - 60px) / 3);
+                // border: 1px solid red;
+                padding:  40px;
+                border-radius: 13px;
+                overflow: hidden;
+                .card_img{
+                    height: 210px;
+                    flex-shrink: 0;
+                    img{
+                        object-fit: contain;
+                    }
+                }
+                .text_area{
+                    .card_heading{
+
+                        font-size: 28px;
+                        font-weight: 700;
+                        line-height: 36px;
+                        text-align: center;
+                        color: variable.$black;
+                    }
+                    .para{
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 30px;
+                        text-align: center;
+                        color: variable.$gray;
+                    }
+                }
+                &.opac_pink{
+                    background-color: variable.$op_pink;
+                }
+                &.opac_blue{
+                    background-color: variable.$op_blue;
+                }
+                &.opac_purple{
+                    background-color: variable.$op_purple;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,131 @@
+@use "../base/variable.scss" as  variable;
+
+.slider_section{
+    padding: 60px 0 90px;
+    .heading{
+        font-family: Inter;
+        font-size: 63px;
+        text-align: center;
+        font-weight: 700;
+        line-height: 76px;
+        color: variable.$black;
+        margin-bottom: 50px;
+        .other{
+            display: inline-block;
+            font-size: 63px;
+            line-height: 76px;
+            font-weight: 400;
+            color: variable.$blue;
+            font-family: variable.$grace;
+        }
+    }
+    .slider{
+        margin-bottom: 75px;
+        .swiper-button-prev{
+            display: none;
+        }
+        .swiper-button-next{
+            display: none;
+        }
+        .profile{
+            padding: 34px;
+            border: 2px solid variable.$black;
+            margin-right: 30px;
+            border-radius: 13px;
+            
+            height: 330px;
+            overflow: hidden;
+            .top_area{
+                display: flex;
+                align-items: center;
+                margin-bottom: 26px;
+                &::after{
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                .profile_img{
+                    float: left;
+                    width: 64px;
+                    height: 64px;
+                    
+                }
+                .profile_detail{
+                    padding-left: 26px;
+                    width: calc(100% - 64px);
+                    float: right;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .name{
+
+                        h5{
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 18px;
+                            color: variable.$black;
+                        }
+                        h6{
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 22px;
+                            color: variable.$gray;
+                        }
+                    }
+                    .twitter_icon{
+                        width: 32px;
+                        height: 32px;
+                        line-height: 32px;
+                        font-size: 25px;
+                        text-align: center;
+                        color: #000;
+                    }
+
+                }
+
+            }
+            .bottom_area{
+                p{
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    color: variable.$gray;
+
+                }
+                .special_tag{
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    .bold_tag{
+                        
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    .slider_btn{
+        background-color: variable.$orange;
+        display: inline-block;
+        align-content: center;
+        padding: 22px 65px;
+        border-radius: 15px;
+        border: 2px solid #2E2F35;
+        box-shadow: 3px 3px 0px 0px #2E2F35;
+
+        .slider_link{
+            text-decoration: none;
+            font-family: Inter;
+            font-size: 13px;
+            font-weight: 700;
+            text-align: center;
+            color: variable.$white;
+
+
+        }
+    }
+    
+    
+}
